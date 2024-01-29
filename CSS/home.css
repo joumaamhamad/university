@@ -1,0 +1,644 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 3px black;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-title {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.navbar .navbar-left .navbar-title span{
+
+}
+
+.navbar-right a {
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 17px 23px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-right a:hover {
+    text-decoration: underline rgb(255, 179, 0) 2px;
+}
+
+.navbar-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar img{
+    width: 30px;
+    height: 30px;
+}
+
+.boldName{
+    color: black;
+
+}
+
+/* After Navigation */
+
+.first {
+    position: relative;
+    height: 100vh; 
+    background: url('../images/header.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.47); 
+}
+
+.first-content {
+    z-index: 1;
+}
+
+.first h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.first h1 span{
+    font-size: 1.5em;
+    /*color: rgb(255, 221, 0);*/
+    color: rgb(255, 179, 0);
+}
+
+.first p {
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+
+
+/* Profile design */
+
+.popup-container {
+
+    visibility: hidden;
+    z-index: 2;
+    position: fixed;
+    width: 50%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.closeButton{
+    position: absolute;
+    top: 1px;
+    right: -43px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+
+.popup-container h1{
+}
+
+.popup-container span{
+
+    text-decoration: underline;
+}
+
+.emailInput , .passwordInput , .confirmPasswordInput{
+    width: 300px;
+    height: 20px;
+}
+
+.updateButton{
+    margin-top: 40px;
+    height: 30px;
+    width: 140px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Home Section */
+
+.education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.education b{
+    font-size: 40px;
+    /*color: black;*/
+    color: black;
+}
+.education p{
+    line-height: 1.5;
+    /*color: black;*/
+    color: black;
+}
+
+.inside{
+    width: 50%;
+}
+
+.education img{
+    padding-top: 40px;
+    width: 85%;
+    border-radius: 10px 10px;
+}
+
+.education button{
+    cursor: pointer;
+    height: 40px;
+    width: 180px;
+    font-size: 16px;
+    background-color: black;
+    border: 1px solid rgb(255, 179, 0);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/*University Section */
+
+.university{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    /*background-color: rgb(229, 229, 229);*/
+    background-color: #e7e7e7;
+}
+
+.university b{
+    font-size: 40px;
+    /*color: black;*/
+    color: black;
+}
+
+.university .university-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+.university .university-content div{
+    margin-left: 40px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px black;
+    
+}
+.university .university-content div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 8px black;
+    transition: 0.5s;
+}
+
+.university .university-content div img:hover{
+transform: scale(1.2);
+}
+
+
+
+/* About Section */
+
+.course{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+
+}
+
+.course h1{
+    /*color: black;*/
+    color: black;
+}
+
+.course .course-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+}
+
+.course .course-content div{
+    margin-left: 40px;
+    text-align: center;
+}
+
+.course .course-content div p{
+    font-weight: bold;
+    color: black;
+
+}
+
+.course .course-content img{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black; 
+    box-shadow: 0 0 10px black;
+    transition-duration: 1s;
+}
+.course .course-content img:hover{
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+
+.contact{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-bottom: 150px;
+    /*background-color: rgb(229, 229, 229);*/
+    background-color: #e7e7e7;
+}
+.contact img{
+    height: 400px;
+    width: 400px;
+    /*border: 1px solid white;*/
+
+}
+
+.contact .content b{
+    /*color: black;*/
+    color: black;
+    text-decoration: underline black;
+}
+.contact .content p{
+    /*color: black;*/
+    color: black;
+}
+
+.contact .form{
+    text-align: center;
+    width: 250px;
+    /*background-color: #003e6e;*/
+    background-color: black;
+    padding: 120px;
+    border: 2px solid black;
+    box-shadow: 0 2px 4px white;
+    border-radius: 8px;
+    
+}
+.contact .form h1{
+    color: white;
+}
+
+.contact .form input{
+    height: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 2px white solid;
+    color: white;
+}
+
+.contact .form button{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    /*background-color: rgb(0, 255, 255);*/
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*background-color: rgb(255, 57, 57);*/
+    background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the content */
+    color: #fff;
+    
+}
+
+.footer-content div {
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-content .div1 b {
+    font-size: 20px;
+}
+
+.footer-content .div2,
+.footer-content .div3,
+.footer-content .div4 {
+    flex: 1; /* Equal width for all columns */
+    margin-left: 130px;
+}
+
+.footer-content .div2 b,
+.footer-content .div3 b,
+.footer-content .div4 b {
+    text-decoration: underline 1px white;
+}
+
+.footer-content .div2 a,
+.footer-content .div3 a,
+.footer-content .div4 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .h-line{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.footer .footer-bottom{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.footer .footer-bottom .logo img{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+}
+.footer .footer-bottom .logo b{
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+
+.footer .footer-bottom .paragraph{
+    margin-left: 300px;
+}
+.footer .footer-bottom .paragraph p{
+    color: white;
+    font-size: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    /* Profile Section */
+
+    .popup-container {
+
+        visibility: hidden;
+        z-index: 2;
+        position: fixed;
+        width: 80%;
+        height: auto;
+        top: 60%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        align-items: center;
+        justify-content: center;
+    }
+    .emailInput , .passwordInput , .confirmPasswordInput{
+        width: 150px;
+        height: 20px;
+    }
+
+    /*Navbar Section */
+
+    .navbar-title {
+        display: none;
+    }
+    .navbar-right{
+        display: flex;
+        justify-content: flex-start;
+
+    }
+    .navbar-right a{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+
+    .boldName{
+        display: none;
+    
+    }
+
+    /*About Section */
+    .course h1{
+        color: black;
+        font-size: 25px;
+    }
+    .course .course-content{
+        margin-right: 20px;
+    }
+
+    .course .course-content img{
+        width: 200px;
+        height: 200px;
+        border: 2px solid rgb(255, 179, 0); 
+        box-shadow: 0 0 10px rgb(255, 179, 0);
+    }
+
+    /* Contact Section */
+
+    .contact{
+
+        display: flex;
+        align-items: center;
+        /*justify-content: space-around;*/
+        padding-top: 150px;
+        padding-left: 00px;
+        padding-bottom: 150px;
+        background-color: rgb(229, 229, 229);
+        margin-left: -30px;
+    }
+
+    .contact .content{
+        display: none;
+    }
+
+    .contact img{
+        display: none;
+    }
+
+    .contact .form{
+        text-align: center;
+        width: 150px;
+        background-color: rgb(255, 179, 0);
+        padding: 80px;
+        margin-right: 20px;
+    }
+    .contact .form h1{
+        color: white;
+    }
+
+    .contact .form input{
+        height: 30px;
+        margin-bottom: 30px;
+        width: 150px;
+        border: 0px;
+        border-bottom: 2px black solid;
+    }
+
+    /*Footer Section */
+    .footer-content .div1 {
+        order: 1; 
+    }
+
+    .footer-content .div2,
+    .footer-content .div3,
+    .footer-content .div4 {
+        flex-basis: 100%; 
+        margin-left: -20px;
+    }
+
+    /* University Section */
+    .university .university-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        margin-left: -30px;
+        
+    }
+
+    .university .university-content div{
+        height: 300px;
+        width: 250px;
+        margin-top: 40px;
+        
+    }
+
+
+
+
+
+
+
+    .footer .footer-bottom{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-left: -100px;
+    }
+    .footer .footer-bottom .paragraph{
+        display: none;
+    }
+
+    .footer .footer-bottom .logo img{
+        height: 60px;
+        width: 60px;
+        border: 1px solid black;
+    }
+
+    .footer .footer-bottom .logo b{
+        position: absolute;
+        padding-top: 30px;
+        padding-left: 10px;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+

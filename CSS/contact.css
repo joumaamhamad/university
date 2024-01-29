@@ -1,0 +1,153 @@
+body{
+    top: 0;
+    left: 0;
+}
+
+header{
+    position: relative;
+    text-align: center;
+    padding-top: 24%;
+    padding-bottom: 24%;
+    background-image: url('../images/about.jpg');
+}
+
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.586); 
+    background-color: #00000080;
+}
+
+header .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .back b{
+    font-size: 20px;
+}
+
+header .background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+header .background b {
+    font-size: 70px;
+    color: white;
+}main{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+h1{
+    color: white;
+}
+
+.content .content-form{
+    text-align: center;
+    width: 30%;
+    padding: 50px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.content .content-form div{
+    padding-top: 30px;
+}
+
+.content .content-form div b{
+    font-size: 17px;
+    color: white;
+}
+
+.content .content-form div input{
+    width: 70%;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.message-bold{
+    position: relative;
+    bottom: 96px;
+    color: white;
+}
+
+.content .content-form textarea{
+    width: 70%;
+    height: 100px;
+}
+
+.content .content-form button{
+    width: 41%;
+    height: 38px;
+    background-color: rgb(255, 145, 19);
+    color: white;
+    cursor: pointer;
+}
+
+.content .content-info{
+    margin-left: 40px;
+    text-align: center;
+    width: 25%;
+    height: auto;
+    padding: 80px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+.font{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.font i{
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .content .content-info{
+        margin-left: 40px;
+        text-align: center;
+        width: 40%;
+        height: auto;
+        padding: 80px;
+        background-color: rgb(58, 58, 58);
+        color: white;
+        margin-left: 0px;
+    }
+    .font{
+        display: flex;
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+
+    .content .content-form{
+        text-align: center;
+        width: 80%;
+        padding: 50px;
+        background-color: black;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}
